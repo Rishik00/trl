@@ -34,34 +34,26 @@ if is_wandb_available():
 # private names never leak. Adding a new trainer requires an explicit entry here.
 _TELEMETRY_TRAINERS = {
     # Stable
-    "DistillationTrainer",
     "DPOTrainer",
     "GRPOTrainer",
     "KTOTrainer",
     "RewardTrainer",
     "RLOOTrainer",
     "SFTTrainer",
-    # Experimental
-    "A2POTrainer",
-    "AsyncDistillationTrainer",
+    # Experimental — keep
     "AsyncGRPOTrainer",
-    "BCOTrainer",
-    "CPOTrainer",
-    "GKDTrainer",
     "GMPOTrainer",
     "GOLDTrainer",
-    "IWOPDTrainer",
-    "MiniLLMTrainer",
     "NashMDTrainer",
     "OnlineDPOTrainer",
     "ORPOTrainer",
-    "PRMTrainer",
-    "SDFTTrainer",
-    "SDPOTrainer",
-    "ServerDistillationTrainer",
-    "SSDTrainer",
-    "TPOTrainer",
     "XPOTrainer",
+    # Experimental — study
+    "A2POTrainer",
+    "BCOTrainer",
+    "CPOTrainer",
+    "SDFTTrainer",
+    "TPOTrainer",
 }
 
 
