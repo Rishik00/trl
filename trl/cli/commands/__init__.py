@@ -21,7 +21,6 @@ from .vllm_serve import VllmServeCommand
 def get_commands() -> list[Command]:
     """Return all registered top-level TRL CLI commands."""
     return [
-        TrainingCommand("distillation"),
         TrainingCommand("dpo"),
         EnvCommand(),
         TrainingCommand("grpo"),
